@@ -8,6 +8,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.security.MessageDigest;
@@ -56,7 +57,6 @@ public class PhpMyAdminKud implements Initializable {
 
             badago(digest, url.toString());
         }catch (FileNotFoundException f){
-
             mezua.setText("Ez du aurkitu url-a");
         }
 
@@ -103,9 +103,6 @@ public class PhpMyAdminKud implements Initializable {
                     mezua.setText("md5 eta bertsio berria datubasean sartu dira");
                 });
     }
-
-
-
 
     public void setMainApp(App app) {
     }
