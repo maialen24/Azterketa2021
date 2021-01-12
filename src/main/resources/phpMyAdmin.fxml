@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ehu.isad.Controllers.ui.PhpMyAdminKud">
+   <children>
+      <Button fx:id="checkButton" layoutX="420.0" layoutY="31.0" mnemonicParsing="false" onAction="#onClick" text="Check" />
+      <TextField fx:id="textURL" layoutX="73.0" layoutY="31.0" prefHeight="26.0" prefWidth="316.0" />
+      <TableView fx:id="taula" layoutX="6.0" layoutY="77.0" prefHeight="271.0" prefWidth="588.0">
+        <columns>
+          <TableColumn fx:id="urlZut" prefWidth="187.0" text="URL" />
+          <TableColumn fx:id="md5Zut" prefWidth="320.0" text="md5" />
+            <TableColumn fx:id="versionZut" minWidth="0.0" text="version" />
+        </columns>
+      </TableView>
+      <Label fx:id="mezua" layoutX="37.0" layoutY="361.0" />
+   </children>
+</AnchorPane>
